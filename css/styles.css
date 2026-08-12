@@ -2,6 +2,7 @@
 :root {
 	--primary-color: #0052cc;
 	--primary-hover: #003d99;
+	--nav-hover: #8ea69b;
 	--text-color: #2a2a2a;
 	--text-muted: #6b7280;
 	--bg-color: #ffffff;
@@ -9,7 +10,7 @@
 	--card-bg: #ffffff;
 	--border-color: #e5e7eb;
 	
-	--font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+	--font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Montserrat, Helvetica, Arial, sans-serif;
 	--max-width: 1000px;
 	--radius: 12px;
 	--transition: all 0.25s ease;
@@ -58,12 +59,122 @@ img {
 	max-width: 100%;
 }
 
-/* .container {
-	max-width: 1158px;
-	padding-left: 15px;
-	padding-right: 15px;
+.container {
+	width: 100%;
+	max-width: var(--max-width);
+	padding-left: 20px;
+	padding-right: 20px;
 	margin-left: auto;
 	margin-right: auto;
-} */
+}
 
-/* Header */
+.section {
+	padding: 60px 0;
+}
+
+.section-alt {
+	background-color: var(--bg-alt);
+}
+
+.section-title {
+	font-size: 2rem;
+	margin-bottom: 40px;
+	text-align: center;
+	position: relative;
+}
+
+.section-title::after {
+	content: '';
+	display: block;
+	width: 50px;
+	height: 4px;
+	background-color: var(--primary-color);
+	margin: 10px auto 0;
+	border-radius: 2px;
+}
+
+/* Button */
+
+.btn {
+	display: inline-block;
+	padding: 10px 24px;
+	border-radius: 30px;
+	text-decoration: none;
+	font-weight: 600;
+	cursor: pointer;
+	transition: var(--transition);
+}
+
+.btn-primary {
+	background-color: var(--primary-color);
+	color: #ffffff;
+}
+
+.btn-primary:hover {
+	background-color: var(--primary-hover);
+}
+
+.btn-outline {
+	border: 2px solid var(--primary-color);
+	color: var(--primary-color);
+}
+
+.btn-outline:hover {
+	background-color: var(--primary-color);
+	color: #ffffff;
+}
+
+/* Header & Nav*/
+
+.header {
+	top: 0;
+	z-index: 100;
+	position: sticky;
+	backdrop-filter: blur(5px);
+	background-color: rgba(255, 255, 255, 0.95);
+	border-bottom: 1px solid var(--border-color);
+	box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
+}
+
+.header-container {
+	display: flex;
+	height: 70px;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.logo {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	padding: 20px 0;
+	text-decoration: none;
+	color: var(--text-color);
+	font-weight: 700;
+	font-size: 1.1rem;
+}
+
+.logo-status {
+	width: 12px;
+	height: 12px;
+	background-color: #10b981;
+	border-radius: 50%;
+}
+
+.nav-list {
+	gap: 20px;
+	display: flex;
+	list-style: none;
+}
+
+.nav-link {
+	padding: 25px 0;
+	text-decoration: none;
+	font-family: Montserrat;
+	color: var(--text-muted);
+	transition: var(--transition);
+}
+
+.nav-link:hover {
+	color: var(--nav-hover);
+}
