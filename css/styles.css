@@ -177,6 +177,25 @@ img {
 	transition: var(--transition);
 }
 
+.nav-link.active {
+	position: relative;
+}
+
+.nav-link.active::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	width: 0;
+}
+
+.nav-link.active:hover::after {
+	height: 2px;
+	width: 100%;
+	bottom: 23px;
+	background-color: var(--nav-hover);
+	transition: width 300ms ease-in-out;
+}
+
 .nav-link:hover {
 	color: var(--nav-hover);
 }
