@@ -2,7 +2,7 @@
 :root {
 	--primary-color: #96dfba;
 	--primary-hover: #6ca68a;
-	--nav-hover: #8ea69b;
+	--nav-hover: #96dfba;
 	--text-color: #2a2a2a;
 	--text-muted: #6b7280;
 	--bg-color: #ffffff;
@@ -80,6 +80,7 @@ img {
 
 .section-title {
 	font-size: 2rem;
+	font-family: Roboto;
 	margin-bottom: 40px;
 	text-align: center;
 	position: relative;
@@ -88,11 +89,10 @@ img {
 .section-title::after {
 	content: '';
 	display: block;
-	width: 50px;
-	height: 4px;
+	width: 100%;
+	height: 2px;
 	background-color: var(--primary-color);
 	margin: 10px auto 0;
-	border-radius: 2px;
 }
 
 /* Button */
@@ -191,7 +191,7 @@ img {
 .nav-link.active:hover::after {
 	height: 2px;
 	width: 100%;
-	bottom: 23px;
+	bottom: 18px;
 	background-color: var(--nav-hover);
 	transition: width 300ms ease-in-out;
 }
@@ -255,8 +255,15 @@ img {
 	margin-bottom: 15px;
 }
 
-.hero-bio p {
+.hero-bio p,
+.article-content {
 	color: var(--text-muted);
 	margin-bottom: 15px;
 	font-size: 1.1rem;
+}
+
+/* Section Skills / Ключові навички*/
+
+.article-content p {
+	margin-bottom: 15px;
 }
