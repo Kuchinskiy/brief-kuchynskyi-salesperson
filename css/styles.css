@@ -1,3 +1,4 @@
+/* Default Global */
 
 :root {
 	--primary-color: #96dfba;
@@ -43,10 +44,14 @@ p {
 	margin: 0;
 }
 
+p:not(:last-child) {
+	margin-bottom: 15px;
+}
+
 ul, ol {
 	margin: 0;
 	padding-left: 0;
-	list-style-type: none;
+	/* list-style-type: none; */
 }
 
 a {
@@ -200,6 +205,8 @@ img {
 	color: var(--nav-hover);
 }
 
+/* Main */
+
 /* Section Hero / Про мене */
 
 .hero-section {
@@ -229,14 +236,16 @@ img {
 
 .hero-title {
 	font-size: 1.5rem;
-	margin-bottom: 5px;
 }
 
 .hero-subtitle,
 .hero-description {
 	color: var(--text-muted);
 	font-size: 0.95rem;
-	margin-bottom: 5px;
+}
+
+.hero-subtitle:not(:last-child) {
+	margin-bottom: 0;
 }
 
 .hero-description {
@@ -252,18 +261,32 @@ img {
 
 .hero-bio h2 {
 	font-size: 2.2rem;
-	margin-bottom: 15px;
 }
 
 .hero-bio p,
 .article-content {
 	color: var(--text-muted);
-	margin-bottom: 15px;
 	font-size: 1.1rem;
 }
 
-/* Section Skills / Ключові навички*/
+/* Section Expiriens / Досвід роботи */
 
-.article-content p {
-	margin-bottom: 15px;
+.timeline-description {
+	list-style-type: none;
+}
+
+.timeline-function {
+	position: relative;
+	padding-left: 15px;
+}
+
+.timeline-function::before {
+	content: "•";
+	position: absolute;
+	left: -1px;
+	color: var(--text-muted);
+}
+
+.timeline-function:not(:last-child) {
+	margin-bottom: 10px;
 }
