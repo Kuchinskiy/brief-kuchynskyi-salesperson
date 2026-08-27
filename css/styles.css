@@ -264,12 +264,15 @@ img {
 }
 
 .hero-bio p,
-.article-content {
+.article-content,
+.timeline-date,
+.timeline-company,
+.timeline-function {
 	color: var(--text-muted);
 	font-size: 1.1rem;
 }
 
-/* Section Expiriens / Досвід роботи */
+/* Section Experience / Досвід роботи */
 
 .timeline-description {
 	list-style-type: none;
@@ -288,5 +291,19 @@ img {
 }
 
 .timeline-function:not(:last-child) {
-	margin-bottom: 10px;
+	margin-bottom: 5px;
+}
+
+.timeline-title {
+	font-family: Roboto;
+	color: var(--text-muted);
+
+}
+
+.timeline-descr {
+	font-size: 1.2rem;
+	font-style: italic;
+	font-family: Montsserat;
+	color: var(--text-muted);
+	margin-bottom: 15px;
 }
