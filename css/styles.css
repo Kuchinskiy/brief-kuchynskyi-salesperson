@@ -268,7 +268,8 @@ img {
 .timeline-date,
 .timeline-company,
 .timeline-subtitle,
-.timeline-function {
+.timeline-function,
+.contacts-text {
 	color: var(--text-muted);
 	font-size: 1.1rem;
 }
