@@ -3,6 +3,12 @@
 :root {
 	--primary-color: #96dfba;
 	--primary-hover: #6ca68a;
+	--viber-color: #7360F2;
+	--viber-hover: #5B4BC4;
+	--telegram-color: #24A1DE;
+	--telegram-hover: #1D82B3;
+	--whatsapp-color: #25D366;
+	--whatsapp-hover: #1DA851;
 	--nav-hover: #96dfba;
 	--text-color: #2a2a2a;
 	--text-muted: #6b7280;
@@ -80,6 +86,8 @@ img {
 }
 
 .section-alt {
+	margin-bottom: 0;
+	padding-bottom: 50px;
 	background-color: var(--bg-alt);
 }
 
@@ -129,6 +137,35 @@ img {
 .btn-outline:hover {
 	background-color: var(--primary-color);
 	color: #ffffff;
+}
+
+/* Button messengers: Viber, Telegram, WhatsApp */
+
+.btn-viber {
+	background-color: var(--viber-color);
+	color: #ffffff;
+}
+
+.btn-viber:hover {
+	background-color: var(--viber-hover);
+}
+
+.btn-telegram {
+	background-color: var(--telegram-color);
+	color: #ffffff;
+}
+
+.btn-telegram:hover {
+	background-color: var(--telegram-hover);
+}
+
+.btn-whatsapp {
+	background-color: var(--whatsapp-color);
+	color: #ffffff;
+}
+
+.btn-whatsapp:hover {
+	background-color: var(--whatsapp-hover);
 }
 
 /* Header & Nav*/
@@ -322,4 +359,11 @@ img {
 	font-style: italic;
 	font-family: Montsserat;
 	color: var(--text-muted);
+}
+
+/* Секція "Контакти" / Contacts */
+
+.contacts-list {
+	display: flex;
+	justify-content: space-around;
 }
