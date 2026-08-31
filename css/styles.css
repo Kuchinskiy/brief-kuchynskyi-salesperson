@@ -244,7 +244,7 @@ img {
 
 /* Main */
 
-/* Section Hero / Про мене */
+/* Section Hero / About / Про мене */
 
 .hero-section {
 	padding: 60px 0;
@@ -301,24 +301,52 @@ img {
 }
 
 .hero-bio p,
-.article-content,
 .timeline-date,
+.article-content,
 .timeline-company,
 .timeline-subtitle,
-.timeline-function,
-.contacts-text {
-	color: var(--text-muted);
+.timeline-function {
 	font-size: 1.1rem;
+	color: var(--text-muted);
+}
+
+/* Section #2 & #3 */
+
+.article-content {
+	padding: 25px;
+	border-radius: var(--radius);
+	border: 1px solid var(--border-color);
 }
 
 /* Section Experience / Досвід роботи */
 
 .timeline {
+	gap: 20px;
+	display: flex;
+	flex-direction: column;
 	margin-bottom: 65px;
+}
+
+.timeline-item {
+	gap: 20px;
+	display: grid;
+	padding: 25px;
+	border-radius: var(--radius);
+	background-color: var(--card-bg);
+	border: 1px solid var(--border-color);
+}
+
+.timeline-date {
+	color: var(--primary-color);
+}
+
+.timeline-company {
+	font-size: 0.9rem;
 }
 
 .timeline-date,
 .timeline-company {
+	display: block;
 	font-style: italic;
 	font-weight: 500;
 }
@@ -351,7 +379,6 @@ img {
 .timeline-title {
 	font-family: Roboto;
 	color: var(--text-muted);
-	margin-bottom: 15px;
 }
 
 .timeline-descr {
