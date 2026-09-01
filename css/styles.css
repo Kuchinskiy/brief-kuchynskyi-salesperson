@@ -251,10 +251,10 @@ img {
 }
 
 .hero-container {
-	display: grid;
-	grid-template-columns: 300px 1fr;
 	gap: 40px;
+	display: grid;
 	align-items: center;
+	grid-template-columns: 300px 1fr;
 }
 
 .hero-card {
@@ -316,6 +316,7 @@ img {
 	padding: 25px;
 	border-radius: var(--radius);
 	border: 1px solid var(--border-color);
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
 /* Section Experience / Досвід роботи */
@@ -334,6 +335,7 @@ img {
 	border-radius: var(--radius);
 	background-color: var(--card-bg);
 	border: 1px solid var(--border-color);
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
 .timeline-date {
@@ -341,7 +343,7 @@ img {
 }
 
 .timeline-company {
-	font-size: 0.9rem;
+	font-size: 0.95rem;
 }
 
 .timeline-date,
